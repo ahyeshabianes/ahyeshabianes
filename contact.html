@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 940px)" href="css/responsive.css">
+
+</head>
+<body onresize="adjustSliderHeight()">
+    <script src="https://use.fontawesome.com/452826394c.js"></script>
+    <nav class="nav-close">
+        <span onclick="closeNav()" class="close-btn">&times;</span>
+        <a href="index.html#about">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#testimonials">Testimonials</a>
+        <a class="internal_link above-line" href="team.html">Our Team</a>
+        <a class="internal_link" href="contact.html">Contact</a>
+    </nav>
+    <header id="contact-haeder">
+        <img id="contact-header-img" src="images/banner-container-image.jpg" alt="Banner Image">
+            <a class="open-btn" onclick="openNav();return false;">
+                <div class="burger">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                </div>
+            </a>
+            <div class="wrapper">
+                <div class="contact-container">
+                    <!--Extra container for the remaining space-->
+                    <div></div>
+                    <!--Contact Form First Grid-->
+                    <div class="contact-form-container">
+                        <h3>Aurora</h3>
+                        <span>Developers that bring the light to those whose in need</span>
+
+                        <label for="Name" class="input-label">Name</label>
+                        <input class="contact-input" type="text" name="Name" id="name">
+
+                        <label for="Message" class="input-label">Message</label>
+                        <textarea class="contact-input" name="Message" id="message" cols="30" rows="10"></textarea>
+                        
+                        <label for="Email" class="input-label">Email Address</label>
+                        <input class="contact-input" type="email" name="Email" id="email">
+
+                        <a class="contact-send-btn" href="">Send</a>
+
+                    </div>
+                    <!--Rocket Image Second Grid-->
+                    <div class="contact-img-container">
+                        <img id="contact-rocket" src="images/rocket-cartoon@2x.png" alt="rocket image">
+                    </div>
+                    <!--Rocket Image Second Grid-->
+                    <div class="contact-details-container">
+                        <ul>
+                            <li>
+                                <h6>TELEPHONE</h6>
+                                <span>(02)512-4585</span>
+                                <span>(639)18-223-6097</span>
+                            </li>
+                            <li>
+                                <h6>Email</h6>
+                                <span>marcelongdiaz@aurora.com</span>
+                                <span>support@aurora.com</span>
+                            </li>
+                            <li>
+                                <h6>Address</h6>
+                                <span>South Mansfield, Anywhere</span>
+                                <span>United Kingdom</span>
+                            </li>
+                        </ul>
+
+                        <h5>Follow us here</h5>
+                            <div class="contact-logo-container">
+                                <span class="contact-logo"><a href=""><i class="fa fa-4x fa-github-square"></i></a></span>
+                                <span class="contact-logo"><a href=""><i class="fa fa-4x fa-facebook-square"></i></a></span>
+                                <span class="contact-logo"><a href=""><i class="fa fa-4x fa-twitter-square"></i></a></span>
+                                <span class="contact-logo"><a href=""><i class="fa fa-4x fa-google-plus-square"></i></a></span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="grid-container-footer">
+                <div class="grid-item-f">
+                    <h3>Aurora</h3>
+                    <p>Developers that bring the </br>
+                            light to those whose in need
+                    </p>
+                </div>
+                <div class="grid-item-f">
+                    <h4>Explore</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#prices">Prices</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#testmonials">Testimonials</a>
+                    <a href="#ourteam">Our Team</a>
+                </div>
+                <div class="grid-item-f">
+                    <h4>Visit</h4>
+                    <p>
+                            South Mansfield,
+                            Anywhere United <br>
+                            Kingdom
+                    </p>
+
+                </div>
+                <div class="grid-item-f">
+                    <h4>Follow</h4>
+                    <a href="#home">Github</a>
+                    <a href="#about">Facebook</a>
+                    <a href="#services">Twitter</a>
+                    <a href="#prices">Instagram</a>
+
+                </div>
+                <div class="grid-item-f">
+                    <h4>Legal</h4>
+                    <a href="#home">Terms</a>
+                    <a href="#about">Privacy</a>
+                </div>
+                <div class="grid-item-f">
+                    <h4>New Business</h4>
+                    <p>
+                            marcelo@aurora.com <br>
+                            marcelo@aurora.com
+                    </p>
+                </div>
+
+            </div>
+            <span>©2018 Aurora. All Rights Reserved.</span>
+        </div>
+    </footer>
+    <div id="modal">
+        <div class="modal-content">
+                <a onclick="minimize();return false;">&times;</a>
+                <img id="modal-image" src="images/noimage.png" alt="">
+                
+        </div>
+    </div>
+    <script>
+        //close nav function
+        function closeNav(){
+            document.getElementsByTagName('nav')[0].classList.add("nav-close");
+        }
+        function openNav(){
+            document.getElementsByTagName("nav")[0].classList.remove("nav-close");
+        }
+        //adjust the our job slide parent container depending
+        //on the size of the child element offsetHeight
+        
+        function adjustSliderHeight(cNum){
+            let parentSlider = document.getElementById(`team${cNum+1}-carousel`);
+            let childrenSlider = document.getElementsByClassName(`team${cNum+1}-item`);
+            var parentSliderHeight = 0;
+                for(let el=0;el<childrenSlider.length;el++){
+                    var currentHeight = childrenSlider[el].offsetHeight;
+                        console.log(currentHeight);
+                    if(currentHeight>=parentSliderHeight){
+                        parentSliderHeight = currentHeight;
+                    }
+                }
+                console.log('The maximum height is: '+ parentSliderHeight);
+                parentSlider.style.height = parentSliderHeight + 'px';
+        }
+
+
+
+       
+    </script>
+</body>
+</html>
