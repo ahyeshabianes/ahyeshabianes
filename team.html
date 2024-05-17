@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 940px)" href="css/responsive.css">
+
+</head>
+<body onresize="adjustSliderHeight()">
+    <script src="https://use.fontawesome.com/452826394c.js"></script>
+    <nav class="nav-close">
+        <span onclick="closeNav()" class="close-btn">&times;</span>
+        <a href="index.html#about">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#testimonials">Testimonials</a>
+        <a class="internal_link above-line" href="team.html">Our Team</a>
+        <a class="internal_link" href="contact.html">Contact</a>
+    </nav>
+    <header>
+        <img src="images/banner-container-image.jpg" alt="Banner Image">
+            <a class="open-btn" onclick="openNav();return false;">
+                <div class="burger">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                </div>
+            </a>
+            <div class="wrapper">
+                <h1>OUR TEAM</h1>
+                <p>Ahyesha is full of amazing people you can work with.</p>
+                <div class="arrow-down-circle"></div>
+            </div>
+    </header>
+    <main>
+        <section id="team">
+            <div class="wrapper">
+                <h2 class="all-caps t1-color">The Legends</h2>
+                <div id="team1-carousel" class="team1-carousel">
+                    <div class="team1-item team1">
+                        <div></div>
+                        <div class="image-content"><img src="images/ahyesha.jpg" alt="face1"></div>
+                        <div class="team-content">
+                            <blockquote>
+                                "We can make things easier,
+                                only if we can trust not only 
+                                ourselves"
+                            </blockquote>
+                            <h5>Ahyesha Bianes</h5>
+                            <span>Web Development Director</span>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="team1-item team1 team1-active">
+                        <div></div>
+                        <div class="image-content"><img src="images/rhea.jpg" alt="face2"></div>
+                        <div class="team-content">
+                            <blockquote>
+                                "We can make things easier,
+                                only if we can trust not only 
+                                ourselves"
+                            </blockquote>
+                            <h5>Rhea Bianes</h5>
+                            <span>Software Quality Assurance Engineer</span>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="team1-item team1">
+                        <div></div>
+                        <div class="image-content"><img src="images/face7.jpeg" alt="face3"></div>
+                        <div class="team-content">
+                            <blockquote>
+                                "We can make things easier,
+                                only if we can trust not only 
+                                ourselves"
+                            </blockquote>
+                            <h5>Marcelo Diaz Jr.</h5>
+                            <span>Software Engineering Lead</span>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="team1-item team1">
+                        <div></div>
+                        <div class="image-content"><img src="images/ahyesha.jpg" alt="face4"></div>
+                        <div class="team-content">
+                            <blockquote>
+                                "We can make things easier,
+                                only if we can trust not only 
+                                ourselves"
+                            </blockquote>
+                            <h5>Ahyesha Bianes</h5>
+                            <span>Web Development Director</span>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div onclick="prevItem(0)" class="slider-left-btn"></div>
+                    <div onclick="nextItem(0)" class="slider-right-btn"></div>
+                </div>
+                <h2 class="all-caps t2-color">The Legends</h2>
+                <div id="team2-carousel" class="team2-carousel">
+                    <div class="team2-item team2">
+                        <div></div>
+                        <div class="image-content"><img src="images/ahyesha.jpg" alt="face1"></div>
+                        <div class="team-content">
+                            <blockquote>
+                                "We can make things easier,
+                                only if we can trust not only 
+                                ourselves"
+                            </blockquote>
+                            <h5>Ahyesha Bianes</h5>
+                            <span>Web Development Director</span>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="team2-item team2">
+                        <div></div>
+                        <div class="image-content"><img src="images/rhea.jpg" alt="face2"></div>
+                        <div class="team-content">
+                            <blockquote>
+                                "We can make things easier,
+                                only if we can trust not only 
+                                ourselves"
+                            </blockquote>
+                            <h5>Rhea Bianes</h5>
+                            <span>Software Quality Assurance Engineer</span>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="team2-item team2 team2-active">
+                        <div></div>
+                        <div class="image-content"><img src="images/face7.jpg" alt="face3"></div>
+                        <div class="team-content">
+                            <blockquote>
+                                "We can make things easier,
+                                only if we can trust not only 
+                                ourselves"
+                            </blockquote>
+                            <h5>Marcelo Diaz Jr.</h5>
+                            <span>Web Development Director</span>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="team2-item team2">
+                        <div></div>
+                        <div class="image-content"><img src="images/ahyesha.jpg" alt="face4"></div>
+                        <div class="team-content">
+                            <blockquote>
+                                "We can make things easier,
+                                only if we can trust not only 
+                                ourselves"
+                            </blockquote>
+                            <h5>Ahyesha Bianes</h5>
+                            <span>Web Development Director</span>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div onclick="prevItem(1)" class="slider-left-btn"></div>
+                    <div onclick="nextItem(1)" class="slider-right-btn"></div>
+                </div>
+                <h2 class="all-caps t3-color">The Legends</h2>
+                <div id="team3-carousel" class="team3-carousel">
+                    <div class="team3-item team3">
+                        <div></div>
+                        <div class="image-content"><img src="images/ahyesha.jpeg" alt="face1"></div>
+                        <div class="team-content">
+                            <blockquote>
+                                "We can make things easier,
+                                only if we can trust not only 
+                                ourselves"
+                            </blockquote>
+                            <h5>Ahyesha Bianes</h5>
+                            <span>Web Development Director</span>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="team3-item team3 team3-active">
+                        <div></div>
+                        <div class="image-content"><img src="images/rhea.jpg" alt="face2"></div>
+                        <div class="team-content">
+                            <blockquote>
+                                "We can make things easier,
+                                only if we can trust not only 
+                                ourselves"
+                            </blockquote>
+                            <h5>Rhea Bianes</h5>
+                            <span>Software Quality Assurance Engineer</span>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="team3-item team3">
+                        <div></div>
+                        <div class="image-content"><img src="images/face6.jpg" alt="face3"></div>
+                        <div class="team-content">
+                            <blockquote>
+                                "We can make things easier,
+                                only if we can trust not only 
+                                ourselves"
+                            </blockquote>
+                            <h5>Marcelo Diaz Jr.</h5>
+                            <span>Software Engineering Lead</span>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="team3-item team3">
+                        <div></div>
+                        <div class="image-content"><img src="images/face7.jpg" alt="face4"></div>
+                        <div class="team-content">
+                            <blockquote>
+                                "We can make things easier,
+                                only if we can trust not only 
+                                ourselves"
+                            </blockquote>
+                            <h5>Marcelo Diaz Jr.</h5>
+                            <span>Software Engineering Lead</span>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div onclick="prevItem(2)" class="slider-left-btn"></div>
+                    <div onclick="nextItem(2)" class="slider-right-btn"></div>
+                </div>
+                <h2 class="all-caps t4-color">The Legends</h2>
+                <div id="team4-carousel" class="team4-carousel">
+                    <div class="team4-item team4">
+                        <div></div>
+                        <div class="image-content"><img src="images/ahyesha.jpg" alt="face1"></div>
+                        <div class="team-content">
+                            <blockquote>
+                                "We can make things easier,
+                                only if we can trust not only 
+                                ourselves"
+                            </blockquote>
+                            <h5>Ahyesha Bianes</h5>
+                            <span>Web Development Director</span>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="team4-item team4 team4-active">
+                        <div></div>
+                        <div class="image-content"><img src="images/face4.jpg" alt="face2"></div>
+                        <div class="team-content">
+                            <blockquote>
+                                "We can make things easier,
+                                only if we can trust not only 
+                                ourselves"
+                            </blockquote>
+                            <h5>Marcelo Diaz Jr.</h5>
+                            <span>Software Engineering Lead</span>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="team4-item team4">
+                        <div></div>
+                        <div class="image-content"><img src="images/face5.jpg" alt="face3"></div>
+                        <div class="team-content">
+                            <blockquote>
+                                "We can make things easier,
+                                only if we can trust not only 
+                                ourselves"
+                            </blockquote>
+                            <h5>Marcelo Diaz Jr.</h5>
+                            <span>Web Development Director</span>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="team4-item team4">
+                        <div></div>
+                        <div class="image-content"><img src="images/face3.jpeg" alt="face4"></div>
+                        <div class="team-content">
+                            <blockquote>
+                                "We can make things easier,
+                                only if we can trust not only 
+                                ourselves"
+                            </blockquote>
+                            <h5>Marcelo Diaz Jr.</h5>
+                            <span>Web Development Director</span>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div onclick="prevItem(3)" class="slider-left-btn"></div>
+                    <div onclick="nextItem(3)" class="slider-right-btn"></div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="grid-container-footer">
+                <div class="grid-item-f">
+                    <h3>Ahyesha</h3>
+                    <p>Developers that bring the </br>
+                            light to those whose in need
+                    </p>
+                </div>
+                <div class="grid-item-f">
+                    <h4>Explore</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#prices">Prices</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#testmonials">Testimonials</a>
+                    <a href="#ourteam">Our Team</a>
+                </div>
+                <div class="grid-item-f">
+                    <h4>Visit</h4>
+                    <p>
+                            Binogawan, <br>
+                            San Policarpo <br>
+                            Eastern Samar
+                    </p>
+
+                </div>
+                <div class="grid-item-f">
+                    <h4>Follow</h4>
+                    <a href="#home">Github</a>
+                    <a href="#about">Facebook</a>
+                    <a href="#services">Twitter</a>
+                    <a href="#prices">Instagram</a>
+
+                </div>
+                <div class="grid-item-f">
+                    <h4>Legal</h4>
+                    <a href="#home">Terms</a>
+                    <a href="#about">Privacy</a>
+                </div>
+                <div class="grid-item-f">
+                    <h4>New Business</h4>
+                    <p>
+                            ahyeshafbianes@gmail.com
+                    </p>
+                </div>
+
+            </div>
+            <span>©2024 Ahyesha. All Rights Reserved.</span>
+        </div>
+    </footer>
+    <div id="modal">
+        <div class="modal-content">
+                <a onclick="minimize();return false;">&times;</a>
+                <img id="modal-image" src="images/noimage.png" alt="">
+                
+        </div>
+    </div>
+    <script>
+
+        var CurrentSlide = [1, 1, 1, 1];
+        var numOfChildren = 4;
+        function setCarousel(num){
+            var items = document.getElementById(`team${num+1}-carousel`).children;
+            return items;
+        }
+        
+        
+        //checking the current Slide
+        for (let csindex = 0; csindex < CurrentSlide.length; csindex++) {
+            var carousel = setCarousel(csindex);
+                for(let i=0;i<carousel.length;i++){
+                    let classValue = carousel[i].classList.value;
+                        if(classValue.indexOf(`team${csindex+1}-active`) >= 0){
+                            CurrentSlide[csindex] = i;
+                        }
+                
+                }
+        }
+        console.log(CurrentSlide);
+        for (let initIndex = 0; initIndex < CurrentSlide.length; initIndex++) {
+            adjustSliderHeight(initIndex);
+            moveSlide(initIndex);
+            
+        }
+
+        //checking the number of the children element that is considered as an item
+        //because we also have children element that we shouldn't slide
+        
+        /*
+        for(let c=0;c<items.length;c++){
+            if(items[c].classList.value.indexOf("team1-item")>=0){
+                numOfChildren += 1;
+            }
+        }
+        */
+
+        //incrementing and decrementing the currentslide and calling the function
+        //to update styling of each item
+        
+        function nextItem(carouselNum = 0){
+            CurrentSlide[carouselNum]+=1;
+            moveSlide(carouselNum);
+            console.log(CurrentSlide);
+        }
+        function prevItem(carouselNum = 0){
+            CurrentSlide[carouselNum]-=1;
+            //moveSlide's parameter is the index of currentSlide that we want to retrieve
+            //0 is for carousel 1, 1 is for carousel 2, and so on.
+            moveSlide(carouselNum);
+            console.log(CurrentSlide);
+        }
+        
+        //function to add css class name active for the current slide
+        function moveSlide(cs){
+            var items = setCarousel(cs);
+
+            for (let b = 0; b < items.length; b++) {
+                if(items[b].classList.value.indexOf(`team${cs+1}-item`)>=0){
+                items[b].classList.remove(`team${cs+1}-active`);   
+                }              
+            }
+            if(CurrentSlide[cs]>=numOfChildren){
+                CurrentSlide[cs] = 0;
+                setRight(cs);
+                items[CurrentSlide[cs]].classList.add(`team${cs+1}-active`); 
+            }
+            else if(CurrentSlide[cs] < 0){
+                CurrentSlide[cs] = numOfChildren-1;
+                setRight(cs);
+                items[CurrentSlide[cs]].classList.add(`team${cs+1}-active`); 
+            }
+            else{
+                setRight(cs);
+            }
+        }
+        //set the style of the each element in the carousel
+        function setRight(csl){
+            var items = setCarousel(csl);
+            for(let a=0; a<numOfChildren;a++){
+                if((items[a].classList.value).indexOf(`team${csl+1}-item`)>=0){
+                    if(a < CurrentSlide[csl]){
+                        items[a].style.left = -100 + '%';
+                        items[a].style.visibility = "invisible";
+                    }
+                    if(a > CurrentSlide[csl]){
+                        items[a].style.left = 100 + '%';
+                        items[a].style.display = "invisible";
+                    }
+                    if(a == CurrentSlide[csl]){
+                        items[a].setAttribute('style', '');
+                        items[a].classList.add(`team${csl+1}-active`); 
+                    }
+                }
+            }
+        }
+        setRight(0);
+        //close nav function
+        function closeNav(){
+            document.getElementsByTagName('nav')[0].classList.add("nav-close");
+        }
+        function openNav(){
+            document.getElementsByTagName("nav")[0].classList.remove("nav-close");
+        }
+        //adjust the our job slide parent container depending
+        //on the size of the child element offsetHeight
+        
+        function adjustSliderHeight(cNum){
+            let parentSlider = document.getElementById(`team${cNum+1}-carousel`);
+            let childrenSlider = document.getElementsByClassName(`team${cNum+1}-item`);
+            var parentSliderHeight = 0;
+                for(let el=0;el<childrenSlider.length;el++){
+                    var currentHeight = childrenSlider[el].offsetHeight;
+                        console.log(currentHeight);
+                    if(currentHeight>=parentSliderHeight){
+                        parentSliderHeight = currentHeight;
+                    }
+                }
+                console.log('The maximum height is: '+ parentSliderHeight);
+                parentSlider.style.height = parentSliderHeight + 'px';
+        }
+
+
+
+       
+    </script>
+</body>
+</html>
