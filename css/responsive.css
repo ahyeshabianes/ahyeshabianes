@@ -1,0 +1,225 @@
+    nav{
+        width: 100%;
+    }
+   .grid-portfolio, .grid-container-footer, .grid-container, div.col-2, .col-3{
+        display: block!important;
+        box-sizing: border-box;
+    }
+    div.col-2{
+        display: block!important;
+    }
+    header h1{
+        font-size: 40px;
+        margin-top: 242px;
+    }
+    .wrapper{
+        padding-left: 37px;
+        padding-right: 37px;
+        box-sizing: border-box;
+    }
+    header p{
+        font-size: 15px;
+        max-width:  250px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 47px;
+    }
+    div.arrow-down-circle{
+        margin-bottom: 158px;
+    }
+    header img{
+        left: 50%;
+        width: auto;
+        height: 100%;
+        transform: translateX(-50%);
+    }
+    #intro{
+        padding: 200px 0;
+    }
+    #about img{
+        width:100%;
+    }
+    .grid-content{
+        opacity: 0.8;
+        font-size: 15px;
+
+    }
+    .about1 p{
+        margin-top: 100px;
+    }
+    .about1 p:last-child{
+        margin-bottom: 50px;
+    }
+    #about h2, #ourjob h2, #portfolio h2, #pricing h2, #testimonials h2{
+        margin: 100px auto 100px auto;
+        font-size: 30px;
+        letter-spacing: normal;
+        font-weight: 400;
+    }
+    #about p{
+        opacity: 0.8;
+    }
+    .title-bot-margin{
+        margin-bottom: 45px;
+        font-size: 20px;
+    }
+    .about2 .grid-content{
+        margin-bottom: 100px;
+    }
+    .about2 .grid-content:last-child{
+        margin-bottom: 0px;
+    }
+    .about2 p{
+        max-width: 100%;
+    }
+    .mt-200{
+        margin: 0;
+    }
+    .about3 p, .about4 p, .about5 p{
+        outline-offset: 20px;
+    }
+    .about3 h2, .about4 h2, .about5 h2{
+        margin-bottom: 151px!important;
+    }
+    .job-card{
+        padding: 50px 37px;
+    }
+    .job-card-content{
+        padding-left: 0;
+    }
+    .previous{
+        padding-left: 0;
+        height: auto;
+        top: 40%;
+        transform: translateY(-40%);
+    }
+    .next{
+        padding-right: 0;
+        height: auto;
+        top: 40%;
+        transform: translateY(-40%);
+    }
+    .details button{
+        margin: 31px auto;
+        display: block;
+        width: 100%;
+    }
+    .details h4{
+        text-align: center;
+    }
+    .details p{
+        opacity: 0.8;
+    }
+    .item img{
+        margin-bottom: 100px;
+    }
+    .port-item{
+        margin: 10px auto;
+    }
+    .portfolio-filter-btn{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        position:  relative;
+    }
+    .portfolio-filter-btn::after{
+        content: "";
+        width: 16px;
+        height: 16px;
+        display: block;
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+        right: 0;
+        margin-right: 25px;
+        position:  absolute;
+        border: 0.5px solid whitesmoke;
+        border-top: transparent;
+        border-left: transparent;
+    }
+    .arrow-down-content-tag{
+        font-size: 15px;
+    }
+    .testimonials-next {
+        right: -10%;
+    }
+    .testimonials-previous {
+        left: -10%;
+    }
+    .testimonials-navigator i{
+        font-size: 3em;
+    }
+    .quote-item p, .quote-item h5, .quote-item span{
+        font-size: 12px;
+    }
+    .quote-item{
+        width: 286px;
+        height: 286px;
+    }
+    .testimonials-carousel{
+        margin: 0;
+    }
+    .quote-item{
+        padding: 80px 23px 70px 23px;
+    }
+    footer{
+        text-align: center;
+        height: auto;
+    }
+    .grid-item-f{
+        margin: 60px auto;
+    }
+    .grid-item-f:first-child{
+        margin-top: 54px;
+    }
+    div.grid-container-footer ~ span{
+        display: block;
+        margin-top: 100px;
+    }
+    .team1-item, .team2-item, .team3-item, .team4-item{
+        display: block;
+        padding: 0 37px;
+        box-sizing: border-box;
+    }
+    #team .wrapper{
+        padding: 0;
+        
+    }
+    .slider-right-btn{
+        transform: rotate(45deg);
+        right: 0;
+    }
+    .slider-left-btn{
+        transform: rotate(45deg);
+        left: 0;
+    }
+    .slider-right-btn, .slider-left-btn{
+        top: 130px;
+        
+    }
+    .team1-carousel, .team2-carousel, .team3-carousel, .team4-carousel{
+        overflow:visible;
+    
+    }
+    .team-content{
+        text-align: center;
+    }
+    .contact-container{
+        display: block;
+        margin-top: 100px;
+    }
+    .contact-form-container label{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .contact-send-btn{
+        padding: 8px 0;
+    }
+    .contact-logo-container{
+        text-align: center;
+    }
+    .contact-details-container h5{
+        text-align: center;
+    }
+    .contact-details-container ul{
+        padding-inline-start: 20%;
+    }
